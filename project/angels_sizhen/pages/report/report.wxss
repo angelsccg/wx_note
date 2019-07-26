@@ -1,0 +1,43 @@
+/* pages/report/report.wxss */
+
+image{
+  display: inline-block;
+  width: 120rpx;
+  height: 120rpx;
+  padding: 15rpx 15rpx 15rpx 20rpx;
+}
+.report-list{
+     background-image: url('../../images/bg01.png');   
+    /* background: #32ffff;  */
+     width: 100%;
+     height: 100vh;
+}
+.report-item{
+  width: 690rpx;
+  padding: 10rpx 30rpx 20rpx;
+  margin: 5rpx 0 5rpx 0;
+ 
+}
+.up{
+  display:flex;
+}
+.down{
+  display:flex;
+  background: #ffffff;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+   box-shadow: 0 2px 5px #eeeeee;
+}
+.left{
+  /*居中不留空白 */
+    text-align:center;
+   /* display: inline-block;  */
+   border-right: 2px solid #eee;
+    width: 40%;
+}
+.right{
+   /*居中不留空白 */
+    text-align:center;
+    width: 100%;
+    line-height: 100px;
+}

@@ -1,0 +1,5 @@
+<!--pages/test/test.wxml-->
+<text>pages/test/test.wxml</text>
+<view>
+<text catchtap='click' class = "{{colorwxml}}"> 点击事件02 颜色 和 值 变化 {{valuewxml}}</text>
+</view>

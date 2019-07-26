@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <!-- <view wx:for-items="{{gameList}}" class="usermotto">
+    <button type="primary" disabled="{{disabled}}" bindtap="start{{item}}"> {{item}} </button>
+  </view> -->
+   <button type="primary" class="usermotto" disabled="{{disabled}}" bindtap="click2048"> 12生肖 </button>
+
+  <text class="more">更多内容，敬请期待...</text>
+</view>

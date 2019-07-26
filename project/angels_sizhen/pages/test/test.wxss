@@ -1,0 +1,7 @@
+/* pages/test/test.wxss */
+.window{
+  color:#865744
+}
+.window-red{
+  color:#D23744
+}

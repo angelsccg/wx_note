@@ -1,0 +1,27 @@
+<view class="report-list" style="background-image: url('../../images/bg01.png')" mode="widthFix|heightFix">
+<!-- wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}"  -->
+  <block wx:for="{{reportList}}" >
+  <!--bindtap="requestNetwork"  -->
+    <view class='report-item' bindtap="requestNetwork">
+       <!-- 上 -->
+        <view class='up'>
+          <view style='text-align:center'>{{item.date}}</view> 
+        </view>
+        <!-- 下 -->
+        <view class='down'>
+           <!-- 左 -->
+          <view class='left'>
+            <view>
+              <image src='../../images/ic_report.png'></image>
+            </view>
+            <view class='center'>{{item.time}}</view>
+          </view>
+          <!--右  -->
+          <text class='right'>{{item.title}}</text>
+
+        </view>
+        
+     
+    </view>
+  </block>
+</view>
